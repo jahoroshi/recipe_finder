@@ -1,0 +1,349 @@
+[
+  {
+    "name": "Simple Scrambled Eggs",
+    "description": "Classic breakfast staple - fluffy scrambled eggs",
+    "cuisine_type": "American",
+    "difficulty": "easy",
+    "prep_time": 5,
+    "cook_time": 5,
+    "servings": 2,
+    "diet_types": ["vegetarian", "gluten-free"],
+    "ingredients": [
+      {"name": "eggs", "quantity": 4, "unit": "whole"},
+      {"name": "butter", "quantity": 1, "unit": "tbsp"},
+      {"name": "milk", "quantity": 2, "unit": "tbsp"},
+      {"name": "salt", "quantity": 0.25, "unit": "tsp"},
+      {"name": "black pepper", "quantity": 0.125, "unit": "tsp"}
+    ],
+    "instructions": {
+      "steps": [
+        "Crack eggs into bowl and whisk with milk",
+        "Heat butter in non-stick pan over medium heat",
+        "Pour eggs into pan",
+        "Gently stir with spatula until just set",
+        "Season with salt and pepper"
+      ],
+      "tips": ["Don't overcook - eggs should be slightly creamy"]
+    },
+    "nutritional_info": {
+      "calories": 215,
+      "protein_g": 14,
+      "carbohydrates_g": 2,
+      "fat_g": 17,
+      "fiber_g": 0,
+      "sugar_g": 1,
+      "sodium_mg": 420,
+      "cholesterol_mg": 380
+    }
+  },
+  {
+    "name": "Grilled Cheese Sandwich",
+    "description": "Golden toasted sandwich with melted cheese",
+    "cuisine_type": "American",
+    "difficulty": "easy",
+    "prep_time": 5,
+    "cook_time": 8,
+    "servings": 1,
+    "diet_types": ["vegetarian"],
+    "ingredients": [
+      {"name": "bread", "quantity": 2, "unit": "slices"},
+      {"name": "cheddar cheese", "quantity": 2, "unit": "slices"},
+      {"name": "butter", "quantity": 1, "unit": "tbsp"}
+    ],
+    "instructions": {
+      "steps": [
+        "Butter one side of each bread slice",
+        "Place cheese between bread, buttered sides out",
+        "Heat pan over medium heat",
+        "Cook sandwich 3-4 minutes per side until golden"
+      ]
+    },
+    "nutritional_info": {
+      "calories": 380,
+      "protein_g": 16,
+      "carbohydrates_g": 28,
+      "fat_g": 22,
+      "fiber_g": 2,
+      "sugar_g": 4,
+      "sodium_mg": 720,
+      "cholesterol_mg": 65
+    }
+  },
+  {
+    "name": "Basic Tomato Soup",
+    "description": "Comforting creamy tomato soup",
+    "cuisine_type": "American",
+    "difficulty": "easy",
+    "prep_time": 10,
+    "cook_time": 20,
+    "servings": 4,
+    "diet_types": ["vegetarian", "gluten-free"],
+    "ingredients": [
+      {"name": "canned tomatoes", "quantity": 28, "unit": "oz"},
+      {"name": "onion", "quantity": 1, "unit": "whole", "notes": "diced"},
+      {"name": "garlic", "quantity": 2, "unit": "cloves", "notes": "minced"},
+      {"name": "vegetable broth", "quantity": 2, "unit": "cups"},
+      {"name": "heavy cream", "quantity": 0.5, "unit": "cup"},
+      {"name": "olive oil", "quantity": 2, "unit": "tbsp"}
+    ],
+    "instructions": {
+      "steps": [
+        "Sauté onion and garlic in olive oil",
+        "Add tomatoes and broth",
+        "Simmer 15 minutes",
+        "Blend until smooth",
+        "Stir in cream and season"
+      ]
+    },
+    "nutritional_info": {
+      "calories": 185,
+      "protein_g": 4,
+      "carbohydrates_g": 16,
+      "fat_g": 12,
+      "fiber_g": 3,
+      "sugar_g": 10,
+      "sodium_mg": 620,
+      "cholesterol_mg": 35
+    }
+  },
+  {
+    "name": "Simple Green Salad",
+    "description": "Fresh mixed greens with vinaigrette",
+    "cuisine_type": "American",
+    "difficulty": "easy",
+    "prep_time": 10,
+    "cook_time": 0,
+    "servings": 4,
+    "diet_types": ["vegetarian", "vegan", "gluten-free"],
+    "ingredients": [
+      {"name": "mixed greens", "quantity": 6, "unit": "cups"},
+      {"name": "cherry tomatoes", "quantity": 1, "unit": "cup", "notes": "halved"},
+      {"name": "cucumber", "quantity": 1, "unit": "whole", "notes": "sliced"},
+      {"name": "olive oil", "quantity": 3, "unit": "tbsp"},
+      {"name": "balsamic vinegar", "quantity": 1, "unit": "tbsp"}
+    ],
+    "instructions": {
+      "steps": [
+        "Wash and dry greens",
+        "Combine greens, tomatoes, cucumber in bowl",
+        "Whisk oil and vinegar",
+        "Toss salad with dressing"
+      ]
+    },
+    "nutritional_info": {
+      "calories": 115,
+      "protein_g": 2,
+      "carbohydrates_g": 8,
+      "fat_g": 9,
+      "fiber_g": 2,
+      "sugar_g": 4,
+      "sodium_mg": 25,
+      "cholesterol_mg": 0
+    }
+  },
+  {
+    "name": "Baked Potato",
+    "description": "Classic oven-baked potato with toppings",
+    "cuisine_type": "American",
+    "difficulty": "easy",
+    "prep_time": 5,
+    "cook_time": 60,
+    "servings": 1,
+    "diet_types": ["vegetarian", "gluten-free"],
+    "ingredients": [
+      {"name": "russet potato", "quantity": 1, "unit": "whole"},
+      {"name": "butter", "quantity": 1, "unit": "tbsp"},
+      {"name": "sour cream", "quantity": 2, "unit": "tbsp"},
+      {"name": "chives", "quantity": 1, "unit": "tbsp", "notes": "chopped"}
+    ],
+    "instructions": {
+      "steps": [
+        "Preheat oven to 400F",
+        "Scrub potato and prick with fork",
+        "Bake 60 minutes until tender",
+        "Slice open and fluff with fork",
+        "Top with butter, sour cream, chives"
+      ]
+    },
+    "nutritional_info": {
+      "calories": 285,
+      "protein_g": 6,
+      "carbohydrates_g": 52,
+      "fat_g": 6,
+      "fiber_g": 5,
+      "sugar_g": 2,
+      "sodium_mg": 85,
+      "cholesterol_mg": 18
+    }
+  },
+  {
+    "name": "Steamed Broccoli",
+    "description": "Simple steamed broccoli with lemon",
+    "cuisine_type": "American",
+    "difficulty": "easy",
+    "prep_time": 5,
+    "cook_time": 7,
+    "servings": 4,
+    "diet_types": ["vegetarian", "vegan", "gluten-free", "low-carb"],
+    "ingredients": [
+      {"name": "broccoli", "quantity": 1, "unit": "head", "notes": "cut into florets"},
+      {"name": "lemon", "quantity": 0.5, "unit": "whole"},
+      {"name": "olive oil", "quantity": 1, "unit": "tbsp"}
+    ],
+    "instructions": {
+      "steps": [
+        "Bring water to boil in steamer",
+        "Steam broccoli 5-7 minutes until tender-crisp",
+        "Drizzle with olive oil and lemon juice"
+      ]
+    },
+    "nutritional_info": {
+      "calories": 65,
+      "protein_g": 4,
+      "carbohydrates_g": 8,
+      "fat_g": 3,
+      "fiber_g": 3,
+      "sugar_g": 2,
+      "sodium_mg": 45,
+      "cholesterol_mg": 0
+    }
+  },
+  {
+    "name": "Peanut Butter Toast",
+    "description": "Toasted bread with creamy peanut butter",
+    "cuisine_type": "American",
+    "difficulty": "easy",
+    "prep_time": 2,
+    "cook_time": 3,
+    "servings": 1,
+    "diet_types": ["vegetarian", "vegan"],
+    "ingredients": [
+      {"name": "bread", "quantity": 2, "unit": "slices"},
+      {"name": "peanut butter", "quantity": 2, "unit": "tbsp"},
+      {"name": "honey", "quantity": 1, "unit": "tsp", "notes": "optional"}
+    ],
+    "instructions": {
+      "steps": [
+        "Toast bread to desired doneness",
+        "Spread peanut butter on warm toast",
+        "Drizzle with honey if desired"
+      ]
+    },
+    "nutritional_info": {
+      "calories": 305,
+      "protein_g": 12,
+      "carbohydrates_g": 36,
+      "fat_g": 14,
+      "fiber_g": 4,
+      "sugar_g": 8,
+      "sodium_mg": 380,
+      "cholesterol_mg": 0
+    }
+  },
+  {
+    "name": "Iced Tea",
+    "description": "Refreshing cold brewed tea",
+    "cuisine_type": "American",
+    "difficulty": "easy",
+    "prep_time": 5,
+    "cook_time": 5,
+    "servings": 4,
+    "diet_types": ["vegetarian", "vegan", "gluten-free"],
+    "ingredients": [
+      {"name": "black tea bags", "quantity": 4, "unit": "bags"},
+      {"name": "water", "quantity": 4, "unit": "cups"},
+      {"name": "sugar", "quantity": 0.25, "unit": "cup", "notes": "optional"},
+      {"name": "lemon", "quantity": 1, "unit": "whole", "notes": "sliced"}
+    ],
+    "instructions": {
+      "steps": [
+        "Boil water and steep tea bags 5 minutes",
+        "Remove tea bags",
+        "Stir in sugar if using",
+        "Chill until cold",
+        "Serve over ice with lemon"
+      ]
+    },
+    "nutritional_info": {
+      "calories": 50,
+      "protein_g": 0,
+      "carbohydrates_g": 13,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "sugar_g": 12,
+      "sodium_mg": 10,
+      "cholesterol_mg": 0
+    }
+  },
+  {
+    "name": "Rice and Beans",
+    "description": "Classic combination of rice and beans",
+    "cuisine_type": "Latin American",
+    "difficulty": "easy",
+    "prep_time": 10,
+    "cook_time": 25,
+    "servings": 6,
+    "diet_types": ["vegetarian", "vegan", "gluten-free"],
+    "ingredients": [
+      {"name": "white rice", "quantity": 2, "unit": "cups"},
+      {"name": "black beans", "quantity": 2, "unit": "cups", "notes": "cooked"},
+      {"name": "onion", "quantity": 1, "unit": "whole", "notes": "diced"},
+      {"name": "garlic", "quantity": 2, "unit": "cloves", "notes": "minced"},
+      {"name": "cumin", "quantity": 1, "unit": "tsp"}
+    ],
+    "instructions": {
+      "steps": [
+        "Cook rice according to package",
+        "Sauté onion and garlic",
+        "Add beans and cumin, heat through",
+        "Serve beans over rice"
+      ]
+    },
+    "nutritional_info": {
+      "calories": 285,
+      "protein_g": 10,
+      "carbohydrates_g": 58,
+      "fat_g": 1,
+      "fiber_g": 8,
+      "sugar_g": 2,
+      "sodium_mg": 240,
+      "cholesterol_mg": 0
+    }
+  },
+  {
+    "name": "Fruit Salad",
+    "description": "Fresh mixed fruit salad",
+    "cuisine_type": "American",
+    "difficulty": "easy",
+    "prep_time": 15,
+    "cook_time": 0,
+    "servings": 6,
+    "diet_types": ["vegetarian", "vegan", "gluten-free"],
+    "ingredients": [
+      {"name": "strawberries", "quantity": 2, "unit": "cups", "notes": "sliced"},
+      {"name": "blueberries", "quantity": 1, "unit": "cup"},
+      {"name": "grapes", "quantity": 1, "unit": "cup", "notes": "halved"},
+      {"name": "pineapple", "quantity": 1, "unit": "cup", "notes": "cubed"},
+      {"name": "honey", "quantity": 2, "unit": "tbsp"},
+      {"name": "lime juice", "quantity": 1, "unit": "tbsp"}
+    ],
+    "instructions": {
+      "steps": [
+        "Combine all fruit in large bowl",
+        "Whisk honey and lime juice",
+        "Pour over fruit and toss gently",
+        "Chill 30 minutes before serving"
+      ]
+    },
+    "nutritional_info": {
+      "calories": 95,
+      "protein_g": 1,
+      "carbohydrates_g": 24,
+      "fat_g": 0,
+      "fiber_g": 3,
+      "sugar_g": 19,
+      "sodium_mg": 5,
+      "cholesterol_mg": 0
+    }
+  }
+]

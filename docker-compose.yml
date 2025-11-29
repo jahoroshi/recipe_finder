@@ -1,0 +1,90 @@
+services:
+  database:
+    image: ankane/pgvector:latest
+    container_name: recipe-finder-postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - recipe-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: recipe-finder-redis
+    command: redis-server --appendonly yes --maxmemory ${REDIS_MAXMEMORY} --maxmemory-policy allkeys-lru
+    ports:
+      - "${REDIS_PORT}:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - recipe-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: recipe-finder-backend
+    ports:
+      - "${BACKEND_PORT}:8009"
+    environment:
+      APP_NAME: ${APP_NAME}
+      APP_VERSION: ${APP_VERSION}
+      DEBUG: ${DEBUG}
+      ENVIRONMENT: ${ENVIRONMENT}
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@database:5432/${POSTGRES_DB}
+      REDIS_URL: redis://redis:6379/0
+      GEMINI_API_KEY: ${GEMINI_API_KEY}
+      GEMINI_EMBEDDING_MODEL: ${GEMINI_EMBEDDING_MODEL}
+      GEMINI_TEXT_MODEL: ${GEMINI_TEXT_MODEL}
+      SECRET_KEY: ${SECRET_KEY}
+      LOG_LEVEL: ${LOG_LEVEL}
+    depends_on:
+      database:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - recipe-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8009/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: recipe-finder-frontend
+    ports:
+      - "${FRONTEND_PORT}:3001"
+    environment:
+      VITE_API_URL: ${VITE_API_URL}
+    depends_on:
+      - backend
+    networks:
+      - recipe-network
+
+networks:
+  recipe-network:
+    driver: bridge
+
+volumes:
+  pgdata:
+  redis_data:

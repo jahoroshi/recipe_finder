@@ -1,0 +1,5 @@
+{
+  "name": "Recipe Finder",
+  "description": "A beautiful web application to store, search, and discover your favorite recipes. Add new recipes through an intuitive modal, and instantly find what you're looking for with a powerful search.",
+  "requestFramePermissions": []
+}

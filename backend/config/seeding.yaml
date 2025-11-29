@@ -1,0 +1,118 @@
+# Database Seeding Configuration
+
+# API Settings
+api:
+  base_url: "http://localhost:8009"
+  timeout: 30
+  max_retries: 3
+  retry_delay: 1.0
+
+# Seeding Parameters
+seeding:
+  default_count: 50
+  batch_size: 10
+  dry_run: false
+  skip_validation: false
+
+# Recipe Generation
+generation:
+  seed: null  # Set for reproducibility, null for random
+
+  # Category distribution (percentages)
+  category_distribution:
+    breakfast: 15
+    main_courses: 30
+    appetizers: 15
+    desserts: 20
+    salads: 10
+    beverages: 10
+
+  # Difficulty distribution (percentages)
+  difficulty_distribution:
+    easy: 40
+    medium: 40
+    hard: 20
+
+  # Time ranges (minutes)
+  time_ranges:
+    prep_time:
+      min: 5
+      max: 180
+    cook_time:
+      min: 0
+      max: 300
+
+  # Servings range
+  servings:
+    min: 1
+    max: 24
+
+# Validation Settings
+validation:
+  sample_queries:
+    - "chicken"
+    - "vegetarian pasta"
+    - "chocolate dessert"
+    - "quick breakfast"
+    - "healthy salad"
+
+  min_success_rate: 0.95  # 95% success rate required
+
+  health_check_retries: 3
+  health_check_delay: 2.0
+
+# Output Settings
+output:
+  save_report: true
+  report_format: "json"
+  report_directory: "./seeding_reports"
+
+  # Logging
+  log_level: "INFO"
+  log_format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+  # Progress display
+  show_progress: true
+  show_distribution: true
+
+# Performance Settings
+performance:
+  concurrent_requests: 5
+  request_timeout: 30
+  connection_pool_size: 100
+
+  # Rate limiting
+  rate_limit:
+    enabled: false
+    requests_per_second: 10
+
+# Error Handling
+error_handling:
+  continue_on_error: true
+  max_consecutive_failures: 10
+  fail_fast: false
+
+  # Retry strategy
+  retry:
+    exponential_backoff: true
+    max_delay: 30
+
+# Data Quality
+quality:
+  validate_schema: true
+  validate_semantics: false
+  check_duplicates: false
+
+  # Ingredient validation
+  validate_ingredients: true
+  allow_empty_ingredients: false
+
+  # Nutritional info
+  require_nutritional_info: false
+  validate_nutritional_ranges: true
+
+# Test Mode
+test_mode:
+  enabled: false
+  fixture_file: "./fixtures/recipes_basic.json"
+  max_recipes: 10
