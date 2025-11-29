@@ -123,4 +123,3 @@ recipe-finder/
 └── .env               # Environment configuration
 ```
 
-For detailed project documentation, see [PROJECT_DESCRIPTION.md](PROJECT_DESCRIPTION.md).
